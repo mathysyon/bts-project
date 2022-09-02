@@ -1,0 +1,1 @@
+python3 /home/pi/Desktop/DossierProgrammesFinaux/PythonAjoutBDD/AjoutCapteurBDD.py

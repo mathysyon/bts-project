@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ConceptBall graphique</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div style="width: 50%">
+    <canvas id="graphiqueConceptball"></canvas>
+    </div>
+    
+    <script>
+    </script>
+
+    <script>
+    const ctx = document.getElementById('graphiqueConceptball').getContext('2d');
+
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'],
+            datasets: [{
+                label: 'Température',
+                backgroundColor: 'rgba(255, 99, 132, 0.25)',
+                borderColor: 'rgb(255, 0, 0)',
+                data: [12, 19, 3, 5, 2, 3]
+            }]
+        },
+        options: {
+            plugins:{
+                title: {
+                    display : true, //Affiche le titre
+                    text: "Evolution des températures" //Titre du graphique
+                }
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta http-equiv="refresh" content="5"> <!--Refresh automatique toutes les 5 secondes-->
+        <link rel = "icon" type = "image/png" href = "https://cdn.icon-icons.com/icons2/1898/PNG/512/chart_121012.png" /> <!--Icon du site-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+        <title>ConceptBall graphique</title>
+    </head>
+
+    <body>
+            <h1> &#127777;: {{ temp }}°C</h1>
+            <h1> &#128167;: {{ humi }} %</h1>
+            <h1> &#128161;: {{ lumi }} lm</h1> 
+            <h1><br> &#127939;: {{ pres }} </h1> 
+    </body>
+</html>
+
